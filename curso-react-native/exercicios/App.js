@@ -1,12 +1,16 @@
 import React from 'react';
 import { Text, SafeAreaView } from 'react-native';
 
+import Primeiro from './src/components/Primeiro';
+
 export default function App() {
-  const jsx = <Text>Primeiro Componente</Text>
 
   return (
     <SafeAreaView>
-      {jsx}
+      <Text>My App</Text>
+      <Text>{1 + 1}</Text>
+
+      <Primeiro/>
     </SafeAreaView>
   );
 }
