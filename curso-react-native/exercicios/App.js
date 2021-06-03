@@ -1,5 +1,5 @@
 import React from 'react';
-import { SafeAreaView } from 'react-native';
+import { SafeAreaView, StyleSheet } from 'react-native';
 
 import Primeiro from './src/components/Primeiro';
 import CompX, { Comp1, Comp2 } from './src/components/Multi';
@@ -7,7 +7,7 @@ import CompX, { Comp1, Comp2 } from './src/components/Multi';
 export default function App() {
 
   return (
-    <SafeAreaView>
+    <SafeAreaView style={style.App}>
       <Primeiro/>
 
       <CompX/>
@@ -16,3 +16,12 @@ export default function App() {
     </SafeAreaView>
   );
 }
+
+const style = StyleSheet.create({
+  App: {
+    //backgroundColor: '#B77',
+    flexGrow: 1,
+    justifyContent: "center",
+    alignItems: "center"
+  }
+})
