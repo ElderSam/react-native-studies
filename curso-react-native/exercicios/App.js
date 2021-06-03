@@ -3,15 +3,18 @@ import { SafeAreaView, StyleSheet } from 'react-native';
 
 // import Primeiro from './src/components/Primeiro';
 // import CompX, { Comp1, Comp2 } from './src/components/Multi';
-import MinMax from './src/components/MinMax';
-import Random from './src/components/Random';
+// import MinMax from './src/components/MinMax';
+// import Random from './src/components/Random';
+import Button from './src/components/Button';
 
 export default function App() {
 
   return (
     <SafeAreaView style={style.App}>
-      <Random min={1} max={10} />
-      <Random min={50} max={100} />
+      <Button/>
+
+      {/* <Random min={1} max={10} />
+      <Random min={50} max={100} /> */}
             
       {/* <Primeiro/>
       <CompX/>
