@@ -1,18 +1,23 @@
 import React from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
 
-import Primeiro from './src/components/Primeiro';
-import CompX, { Comp1, Comp2 } from './src/components/Multi';
+// import Primeiro from './src/components/Primeiro';
+// import CompX, { Comp1, Comp2 } from './src/components/Multi';
+import MinMax from './src/components/MinMax';
 
 export default function App() {
 
   return (
     <SafeAreaView style={style.App}>
-      <Primeiro/>
-
+      <MinMax min={3} max={20} />
+      <MinMax min={1} max={49} />
+            
+      {/* <Primeiro/>
       <CompX/>
       <Comp1/>
-      <Comp2/>
+      <Comp2/> */}
+
+      
     </SafeAreaView>
   );
 }
@@ -22,6 +27,7 @@ const style = StyleSheet.create({
     //backgroundColor: '#B77',
     flexGrow: 1,
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
+    padding: 20
   }
 })
