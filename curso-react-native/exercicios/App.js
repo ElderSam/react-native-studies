@@ -2,8 +2,9 @@
 
 import React from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
-import Father from './src/components/indirect/Father';
 
+import CounterV2 from './src/components/counter/CounterV2';
+// import Father from './src/components/indirect/Father';
 // import Primeiro from './src/components/Primeiro';
 // import CompX, { Comp1, Comp2 } from './src/components/Multi';
 // import MinMax from './src/components/MinMax';
@@ -16,7 +17,8 @@ export default function App() {
 
   return (
     <SafeAreaView style={style.App}>
-      <Father />
+      <CounterV2 />
+      {/* <Father /> */}
       {/* <Temp /> */}
 
       {/* <Counter initial={100} step={2} />
