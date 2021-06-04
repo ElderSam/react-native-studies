@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
+import Father from './src/components/direct/Father';
 
 // import Primeiro from './src/components/Primeiro';
 // import CompX, { Comp1, Comp2 } from './src/components/Multi';
@@ -9,13 +10,14 @@ import { SafeAreaView, StyleSheet } from 'react-native';
 // import Random from './src/components/Random';
 // import Button from './src/components/Button';
 // import Counter from './src/components/Counter'
-import Temp from './src/components/Temp';
+// import Temp from './src/components/Temp';
 
 export default function App() {
 
   return (
     <SafeAreaView style={style.App}>
-      <Temp />
+      <Father />
+      {/* <Temp /> */}
 
       {/* <Counter initial={100} step={2} />
       <Counter /> */}
