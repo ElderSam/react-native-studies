@@ -2,8 +2,9 @@
 
 import React from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
-import Diferenciar from './src/components/Differentiate';
 
+import ParImpar from './src/components/ParImpar'
+// import Diferenciar from './src/components/Differentiate';
 // import CounterV2 from './src/components/counter/CounterV2';
 // import Father from './src/components/indirect/Father';
 // import Primeiro from './src/components/Primeiro';
@@ -18,7 +19,8 @@ export default function App() {
 
   return (
     <SafeAreaView style={style.App}>
-      <Diferenciar />
+      <ParImpar num={1} />
+      {/* <Diferenciar /> */}
       {/* <CounterV2 /> */}
       {/* <Father /> */}
       {/* <Temp /> */}

@@ -9,6 +9,6 @@ export default _ => { // Conditional rendering based on Operating System type
     }else if(Platform.OS === 'ios') {
         return <Text style={Style.bigText}>iOS</Text>
     }else {
-        return <Text style={Style.bigText}>Eita!!!</Text>
+        return <Text style={Style.bigText}>{Platform.OS}</Text>
     }
 }
