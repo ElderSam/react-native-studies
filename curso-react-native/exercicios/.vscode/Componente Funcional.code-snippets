@@ -1,0 +1,27 @@
+/* Tip: to create a Snippet in VSCode;
+	File > Preferences > User Snippets > choice the scope, type the Name and press Enter.
+
+	to use this snippet, create a new file, type 'compfunc' (the prefix created in this file) and press Enter
+*/
+
+{
+	"Componente Funcional": {
+		"scope": "javascript",
+		"prefix": "compfunc",
+		"body": [
+			"import React from 'react'",
+			"import { Text } from 'react-native'",
+			"import Style from './Style'",
+			"",
+			"export default props => {",
+			"	return (",
+			"		<Text style={Style.bigText}>"
+			"			$1"
+			"		</Text>",
+			"	)",
+			"}",
+			"$2",
+		],
+		"description": "Log output to console"
+	}
+}

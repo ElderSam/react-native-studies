@@ -8,14 +8,17 @@ import { SafeAreaView, StyleSheet } from 'react-native';
 // import MinMax from './src/components/MinMax';
 // import Random from './src/components/Random';
 // import Button from './src/components/Button';
-import Counter from './src/components/Counter'
+// import Counter from './src/components/Counter'
+import Temp from './src/components/Temp';
 
 export default function App() {
 
   return (
     <SafeAreaView style={style.App}>
-      <Counter initial={100} step={2} />
-      <Counter />
+      <Temp />
+
+      {/* <Counter initial={100} step={2} />
+      <Counter /> */}
 
       {/* <Button/> */}
       {/* <Random min={1} max={10} />
