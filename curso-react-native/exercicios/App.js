@@ -27,7 +27,7 @@ export default function App() {
 
   return (
     <SafeAreaView style={style.App}>
-      <Mega qtdNumeros={7} />
+      <Mega qtdNumeros={12} />
 
       {/* <FLexBoxV4 /> */}
 
