@@ -3,7 +3,8 @@
 import React from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
 
-import ProductListV2 from './src/components/products/ProductListV2'
+import DigiteSeuNome from './src/components/DigiteSeuNome';
+// import ProductListV2 from './src/components/products/ProductListV2'
 // import ProductList from './src/components/products/ProductList'
 // import UsuarioLogado from './src/components/UsuarioLogado'
 // import Familia from './src/components/relacao/Familia'
@@ -24,7 +25,9 @@ export default function App() {
 
   return (
     <SafeAreaView style={style.App}>
-      <ProductListV2 />
+      <DigiteSeuNome />
+
+      {/* <ProductListV2 /> */}
 
       {/* Conditional Rendering #02 */}
       {/* <UsuarioLogado usuario={ {nome: 'Gui', email: 'gui@gui.com'} } />
