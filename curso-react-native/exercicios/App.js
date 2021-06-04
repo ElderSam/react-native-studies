@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
-import Father from './src/components/direct/Father';
+import Father from './src/components/indirect/Father';
 
 // import Primeiro from './src/components/Primeiro';
 // import CompX, { Comp1, Comp2 } from './src/components/Multi';
