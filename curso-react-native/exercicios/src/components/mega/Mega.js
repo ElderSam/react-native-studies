@@ -25,10 +25,22 @@ export default class Mega extends Component {
         const numeros = Array(this.state.qtdNumeros)
             .fill()
             .reduce(n => [...n, this.gerarNumeroNaoContido(n)], [])
-            .sort((a, b) => a - b)
+            .sort((a, b) => a - b) // ordinates alphabetically
 
         this.setState({ numeros })
     }
+
+    // gerarNumeros = () => { // alternative: procedural form
+    //     const { qtdNumeros } = this.state
+    //     const numeros = []
+    //     for(let i=0; i<qtdNumeros; i++) {
+    //         const n = this.gerarNumeroNaoContido(numeros)
+    //         numeros.push(n)
+    //     }
+
+    //     numeros.sort((a, b) => a - b) // ordinates alphabetically
+    //     this.setState({ numeros })
+    // }
 
     render() {
         return (
@@ -36,6 +48,7 @@ export default class Mega extends Component {
                 <Text style={Style.bigText}>
                     Gerador de Mega-Sena 
                 </Text>
+                <Text>(Números Aleatórios)</Text>
 
                 <TextInput
                     keyboardType={'numeric'}
