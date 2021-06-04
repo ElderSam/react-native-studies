@@ -9,8 +9,8 @@ export default class Mega extends Component {
         qtdNumeros: this.props.qtdNumeros
     }
 
-    changeQtdNumero(qtde) {
-        //this.setState({ qtdNumeros: qtde })
+    changeQtdNumero = (qtde) => {
+        this.setState({ qtdNumeros: qtde })
     }
 
     render() {
@@ -20,10 +20,13 @@ export default class Mega extends Component {
                     Gerador de Mega-Sena 
                     {this.state.qtdNumeros}
                 </Text>
+
                 <TextInput
+                    keyboardType={'numeric'}
+                    style={{borderBottomWidth: 1}}
                     placeholder="Qtde de Números"
                     value={this.state.qtdNumeros}
-                    onChange={this.changeQtdNumero}
+                    onChangeText={this.changeQtdNumero}
                 />
             </>
         )
