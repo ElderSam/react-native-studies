@@ -1,3 +1,5 @@
+/* State Component (UseState) */
+
 import React from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
 
@@ -5,14 +7,17 @@ import { SafeAreaView, StyleSheet } from 'react-native';
 // import CompX, { Comp1, Comp2 } from './src/components/Multi';
 // import MinMax from './src/components/MinMax';
 // import Random from './src/components/Random';
-import Button from './src/components/Button';
+// import Button from './src/components/Button';
+import Counter from './src/components/Counter'
 
 export default function App() {
 
   return (
     <SafeAreaView style={style.App}>
-      <Button/>
+      <Counter initial={100} step={2} />
+      <Counter />
 
+      {/* <Button/> */}
       {/* <Random min={1} max={10} />
       <Random min={50} max={100} /> */}
             
