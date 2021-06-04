@@ -17,7 +17,7 @@ export default props => {
 
 const style = StyleSheet.create({
     FlexV2: {
-        flex: 1, // flex grow
+        flex: 1,
         width: '100%',
         alignItems: "flex-end",
         justifyContent: 'space-evenly',
