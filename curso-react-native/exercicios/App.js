@@ -3,7 +3,7 @@
 import React from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
 
-import FLexBoxV2 from './src/components/layout/FlexBoxV2'
+import FLexBoxV3 from './src/components/layout/FlexBoxV3'
 // import DigiteSeuNome from './src/components/DigiteSeuNome';
 // import ProductListV2 from './src/components/products/ProductListV2'
 // import ProductList from './src/components/products/ProductList'
@@ -26,7 +26,7 @@ export default function App() {
 
   return (
     <SafeAreaView style={style.App}>
-      <FLexBoxV2 />
+      <FLexBoxV3 />
 
       {/* <DigiteSeuNome /> */}
 
