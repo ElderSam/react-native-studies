@@ -3,8 +3,9 @@
 import React from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
 
-import Familia from './src/components/relacao/Familia'
-import Membro from './src/components/relacao/Membro'
+import UsuarioLogado from './src/components/UsuarioLogado'
+// import Familia from './src/components/relacao/Familia'
+// import Membro from './src/components/relacao/Membro'
 // import ParImpar from './src/components/ParImpar'
 // import Diferenciar from './src/components/Differentiate';
 // import CounterV2 from './src/components/counter/CounterV2';
@@ -21,9 +22,13 @@ export default function App() {
 
   return (
     <SafeAreaView style={style.App}>
-
+      <UsuarioLogado usuario={ {nome: 'Gui', email: 'gui@gui.com'} } />
+      <UsuarioLogado usuario={ {nome: 'Ana' } } />
+      <UsuarioLogado usuario={ { email: 'calos@email.com'} } />
+      <UsuarioLogado usuario={null} />
+      <UsuarioLogado usuario={{}} />
       {/* passing components as parameters */}
-      <Familia>
+      {/* <Familia>
         <Membro nome="Alexa" sobrenome="Arruda" />
         <Membro nome="Maria" sobrenome="Arruda" />
       </Familia>
@@ -31,7 +36,7 @@ export default function App() {
         <Membro nome="Ana" sobrenome="Silva" />
         <Membro nome="Julia" sobrenome="Silva" />
         <Membro nome="Pedro" sobrenome="Silva" />
-      </Familia>
+      </Familia> */}
 
       {/* <ParImpar num={1} /> */}
       {/* <Diferenciar /> */}
