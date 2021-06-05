@@ -2,13 +2,18 @@
 import React, { Component } from 'react';
 import { StyleSheet, SafeAreaView, View } from 'react-native';
 
+import Display from './src/components/Display'
 import Button from './src/components/Button'
-
 export default class App extends Component {
+  state = {
+    displayValue: '0'
+  }
 
   render() {
     return (
       <SafeAreaView style={styles.container}>
+        <Display value={this.state.displayValue} />
+
         <View style={styles.buttons}>
           <Button label='AC' />
           <Button label='/' />
