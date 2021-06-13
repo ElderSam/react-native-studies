@@ -19,7 +19,18 @@ export default props => (
                 ?   <Button
                         title='Avancar'
                         onPress={() => {
-                            props.navigation.push(props.avancar) // you can use .push to call the same screen
+                            props.navigation.navigate(
+                                props.avancar,
+                                props.avancarParams  // you can pass params to the next screen
+                            )
+
+                            // props.navigation.push(
+                            //     props.avancar,
+                            //     {
+                            //         numero: parseInt(Math.random() * 100)
+                            //     }
+
+                            // ) // you can use .push to call the same screen
                         }}
                     />
                 : false
