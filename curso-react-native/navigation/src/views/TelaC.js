@@ -3,11 +3,12 @@ import TextoCentral from '../components/TextoCentral'
 
 export default props => {
     // console.warn(props.route.params)
-    const route = props.route || { params: { numero: 0 } }
+    const r = props.route
+    const numero = r && r.params && r.params.numero ? r.params.numero : 0
 
     return (
         <TextoCentral corFundo='#9932cd'>
-            Tela C - {route.params.numero}
+            Tela C - {numero}
         </TextoCentral>
     )
 }
