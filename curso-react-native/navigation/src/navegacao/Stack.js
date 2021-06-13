@@ -20,13 +20,21 @@ export default props => (
                 </PassoStack>
             )}
         </Stack.Screen>
+
         <Stack.Screen name="TelaB">
             {props => (
-                <PassoStack {...props} avancar="TelaC" voltar>
+                <PassoStack {...props} avancar="TelaC" voltar avancar="TelaC">
                     <TelaB />
                 </PassoStack>
             )}
         </Stack.Screen>
-        <Stack.Screen name="TelaC" component={TelaC} />
+
+        <Stack.Screen name="TelaC">
+            {props => (
+                <PassoStack {...props} avancar="TelaC" voltar avancar="TelaC">
+                    <TelaC />
+                </PassoStack>
+            )}
+        </Stack.Screen>
     </Stack.Navigator>
 )

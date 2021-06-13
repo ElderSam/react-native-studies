@@ -19,7 +19,7 @@ export default props => (
                 ?   <Button
                         title='Avancar'
                         onPress={() => {
-                            props.navigation.navigate(props.avancar)
+                            props.navigation.push(props.avancar) // you can use .push to call the same screen
                         }}
                     />
                 : false
